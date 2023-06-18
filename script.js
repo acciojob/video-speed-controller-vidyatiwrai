@@ -69,3 +69,6 @@ function seekVideo(event) {
   const seekTime = (event.offsetX / progressBar.parentNode.offsetWidth) * video.duration;
   video.currentTime = seekTime;
 }
+
+    inputs.forEach(input => input.addEventListener('change', handleUpdate));
+    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
